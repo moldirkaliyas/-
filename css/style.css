@@ -1,0 +1,926 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit; }
+
+/*--------------------*/
+.main {
+  background-color: #000;
+  min-width: 100%;
+  min-height: 830px;
+  position: relative;
+  margin-bottom: 168px; }
+  @media (max-width: 1142px) {
+    .main {
+      min-height: 600px; } }
+  @media (max-width: 882px) {
+    .main {
+      min-height: 400px; } }
+  @media (max-width: 620px) {
+    .main {
+      min-height: 400px; } }
+
+.main__image {
+  min-width: 100%;
+  min-height: 100%; }
+  .main__image > img {
+    width: 100%;
+    min-height: 100%;
+    padding-bottom: 80px;
+    padding-right: 80px; }
+    @media (max-width: 1142px) {
+      .main__image > img {
+        padding-bottom: 40px;
+        padding-right: 60px; } }
+    @media (max-width: 882px) {
+      .main__image > img {
+        padding-right: 40px;
+        padding-bottom: 30px; } }
+    @media (max-width: 610px) {
+      .main__image > img {
+        padding-right: 30px;
+        height: 400px; } }
+
+.main__header {
+  padding: 0 68px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 170px;
+  margin-top: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  @media (max-width: 1142px) {
+    .main__header {
+      margin-top: 40px; } }
+  @media (max-width: 882px) {
+    .main__header {
+      height: 140px; } }
+
+.main__logo {
+  margin-bottom: 250px; }
+
+.main__title {
+  color: #fff; }
+  @media (max-width: 620px) {
+    .main__title img {
+      width: 100px; } }
+
+.main__menu {
+  padding: 0; }
+
+.main__menu1 {
+  position: absolute;
+  top: -68px;
+  right: 0;
+  background-color: #000;
+  width: 160px;
+  height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  @media (max-width: 882px) {
+    .main__menu1 {
+      height: 100px;
+      width: 100px; } }
+  @media (max-width: 620px) {
+    .main__menu1 {
+      height: 60px;
+      width: 60px;
+      top: -48px; }
+      .main__menu1 img {
+        width: 20px; } }
+
+.decors {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  padding-right: 40px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  @media (max-width: 1142px) {
+    .decors {
+      padding-right: 30px; } }
+  @media (max-width: 882px) {
+    .decors {
+      padding-right: 20px; } }
+  @media (max-width: 610px) {
+    .decors {
+      padding-right: 10px; } }
+
+.decors__decor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.decors__square {
+  height: 80px;
+  width: 160px;
+  background-color: #fff;
+  margin-bottom: 80px; }
+  @media (max-width: 1142px) {
+    .decors__square {
+      height: 60px;
+      width: 140px;
+      margin-bottom: 60px; }
+      .decors__square:last-child {
+        content: "";
+        margin-bottom: 0; } }
+  @media (max-width: 882px) {
+    .decors__square {
+      height: 40px;
+      width: 80px;
+      margin-bottom: 20px; } }
+
+.decors__rhombus1 {
+  margin-bottom: 80px;
+  margin-top: 75px; }
+  @media (max-width: 1142px) {
+    .decors__rhombus1 {
+      margin-bottom: 60px;
+      margin-top: 65px; }
+      .decors__rhombus1 img {
+        width: 60px;
+        height: 60px; } }
+  @media (max-width: 1142px) and (max-width: 882px) {
+    .decors__rhombus1 {
+      margin-bottom: 20px;
+      margin-top: 25px; }
+      .decors__rhombus1 img {
+        width: 40px;
+        height: 40px; } }
+
+.decors__rhombus {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background-color: #fff;
+  width: 80px;
+  height: 1px;
+  text-align: center; }
+  @media (max-width: 1142px) {
+    .decors__rhombus {
+      width: 60px; } }
+  @media (max-width: 882px) {
+    .decors__rhombus {
+      width: 40px; } }
+
+.decors__rhombus2 {
+  margin-bottom: 80px; }
+  @media (max-width: 1142px) {
+    .decors__rhombus2 {
+      margin-bottom: 60px; } }
+  @media (max-width: 1142px) {
+    .decors__rhombus2 img {
+      width: 60px;
+      height: 60px; } }
+  @media (max-width: 882px) {
+    .decors__rhombus2 {
+      margin-bottom: 20px; }
+      .decors__rhombus2 img {
+        width: 40px;
+        height: 40px; } }
+
+.decors__rhombus3 {
+  margin-bottom: 75px; }
+  @media (max-width: 1142px) {
+    .decors__rhombus3 {
+      margin-bottom: 65px; } }
+  @media (max-width: 1142px) {
+    .decors__rhombus3 {
+      margin-bottom: 25px; }
+      .decors__rhombus3 img {
+        width: 60px;
+        height: 60px; } }
+  @media (max-width: 882px) {
+    .decors__rhombus3 img {
+      width: 40px;
+      height: 40px; } }
+
+/** Generated by FG **/
+@font-face {
+  font-family: 'Conv_ofont.ru_Museo Sans Cyrl 100';
+  src: url("..//fonts/ofont.ru_Museo Sans Cyrl 100.eot");
+  src: local("☺"), url("..//fonts/ofont.ru_Museo Sans Cyrl 100.woff") format("woff"), url("..//fonts/ofont.ru_Museo Sans Cyrl 100.ttf") format("truetype"), url("..//fonts/ofont.ru_Museo Sans Cyrl 100.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.europe {
+  margin-bottom: 368px; }
+
+.europe__first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.europe__text {
+  width: 720px;
+  font-family: 'Conv_ofont.ru_Museo Sans Cyrl 100';
+  font-size: 32px;
+  line-height: 48px;
+  padding-right: 160px;
+  position: relative;
+  border-right: 2px solid  #00adef;
+  padding-top: 70px;
+  padding-bottom: 70px; }
+
+.europe__content {
+  position: absolute;
+  top: 0;
+  padding-top: 120px;
+  width: 100%;
+  height: 100%; }
+
+.europe__texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33.333%;
+  flex: 0 0 33.333%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.europe__element {
+  width: 321px;
+  padding-right: 80px; }
+
+.europe__title {
+  /* Style for "Інтенсивні" */
+  color: #000000;
+  font-family: 'Conv_ofont.ru_Museo Sans Cyrl 100';
+  font-size: 20px;
+  line-height: 32px; }
+
+.europe__text1 {
+  opacity: 0.5;
+  color: #000000;
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 16px;
+  line-height: 28px; }
+
+.europe__text2 {
+  opacity: 0.2;
+  color: #000000;
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 20px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  text-transform: uppercase;
+  width: 320px;
+  padding-left: 80px;
+  padding-top: 70px; }
+
+.europe__decor {
+  position: relative; }
+  .europe__decor .decors__square {
+    background-color: #000;
+    width: 80px; }
+  .europe__decor .decors__rhombus {
+    background-color: #000; }
+
+.footer {
+  display: inline-block;
+  margin-left: 170px;
+  padding-top: 193px;
+  font-family: "Museo Sans Cyrl 700";
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 16px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #00adef;
+  padding-bottom: 28px; }
+  .footer a {
+    display: inline-block;
+    color: #00adef;
+    padding-right: 67px; }
+  .footer span {
+    width: 80px;
+    height: 1px;
+    background-color: #00adef;
+    display: inline-block;
+    margin: 0 auto; }
+
+.magnus {
+  position: relative;
+  height: 952px;
+  width: 100%;
+  margin-bottom: 200px; }
+
+.magnus__gray {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  padding-left: 80px;
+  padding-top: 80px; }
+
+.magnus__graybg {
+  background-color: #d1d3d4;
+  width: 100%;
+  height: 100%; }
+
+.magnus__black {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  padding-right: 80px;
+  padding-bottom: 80px;
+  z-index: 2; }
+
+.magnus__blackbg {
+  position: relative;
+  opacity: 0.9;
+  background-color: #141414;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.magnus__img img {
+  width: 100%;
+  height: 100%; }
+
+.magnus__content {
+  width: 500px;
+  margin-left: -350px; }
+
+.magnus__title {
+  color: #ffffff;
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 32px;
+  line-height: 48px;
+  margin-top: 127px;
+  margin-bottom: 80px; }
+
+.magnus__text {
+  color: #ffffff;
+  font-family: "Museo Sans Cyrl 500";
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 34px; }
+
+.magnus__end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.magnus__endtext {
+  color: #ffffff;
+  font-family: "Museo Sans Cyrl 500";
+  font-size: 16px;
+  line-height: 28px;
+  /* Text style for "Магнус Вет" */
+  font-family: "Museo Sans Cyrl 900"; }
+  .magnus__endtext span {
+    font-weight: 900; }
+
+.magnus__img2 {
+  margin-top: -30px; }
+
+.magnus__footer {
+  margin-left: 0px;
+  padding-top: 60px; }
+
+.magnus .decors__decor {
+  z-index: 2; }
+
+.magnus .decors__square {
+  z-index: 5;
+  margin-left: 0px;
+  background-color: #ffffff;
+  width: 80px; }
+
+/** Generated by FG **/
+@font-face {
+  font-family: 'Conv_ofont.ru_Museo Sans Cyrl 100';
+  src: url("..//fonts/ofont.ru_Museo Sans Cyrl 100.eot");
+  src: local("☺"), url("..//fonts/ofont.ru_Museo Sans Cyrl 100.woff") format("woff"), url("..//fonts/ofont.ru_Museo Sans Cyrl 100.ttf") format("truetype"), url("..//fonts/ofont.ru_Museo Sans Cyrl 100.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.intensive {
+  margin-bottom: 368px; }
+
+.intensive__first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.intensive__text {
+  width: 720px;
+  font-family: 'Conv_ofont.ru_Museo Sans Cyrl 100';
+  font-size: 32px;
+  line-height: 48px;
+  padding-right: 160px;
+  position: relative;
+  border-right: 2px solid  #00adef;
+  padding-top: 70px;
+  padding-bottom: 70px; }
+
+.intensive__content {
+  position: absolute;
+  top: 0px;
+  padding-top: 120px;
+  width: 100%;
+  height: 100%; }
+
+.intensive__texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto; }
+
+.intensive__element {
+  width: 321px;
+  margin-right: 300px; }
+  .intensive__element:last-child {
+    content: "";
+    margin-right: 0; }
+
+.intensive__list {
+  padding-leftx: 20px; }
+
+.intensive__link li {
+  position: relative;
+  width: 488px;
+  color: #000000;
+  font-family: "Conv_ofont.ru_Museo Sans Cyrl 100";
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 24px; }
+  .intensive__link li:before {
+    content: "";
+    background: url("..//img/icons/icon.svg") left center no-repeat;
+    width: 16px;
+    position: absolute;
+    height: 23px;
+    text-align: center;
+    left: -25px; }
+
+.intensive__decor {
+  position: relative; }
+  .intensive__decor .decors__square {
+    background-color: #000;
+    width: 80px; }
+  .intensive__decor .decors__rhombus {
+    background-color: #000; }
+
+.intensive__footer {
+  display: inline-block;
+  margin-left: 170px;
+  padding-top: 193px;
+  font-family: "Conv_ofont.ru_Museo Sans Cyrl 100";
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 16px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #00adef;
+  padding-bottom: 28px; }
+  .intensive__footer a {
+    display: inline-block;
+    color: #00adef;
+    padding-right: 67px; }
+  .intensive__footer span {
+    width: 80px;
+    height: 1px;
+    background-color: #00adef;
+    display: inline-block;
+    margin: 0 auto; }
+
+.intensive__text2 {
+  opacity: 0.2;
+  color: #000000;
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 20px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  text-transform: uppercase;
+  width: 320px;
+  padding-left: 80px;
+  padding-top: 70px; }
+
+.innovation {
+  height: 811px;
+  position: relative;
+  width: 100%; }
+  .innovation .decors__square {
+    background-color: #000;
+    width: 80px; }
+
+.innovation__content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.innovation__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.innovation__text {
+  width: 560px;
+  color: #000000;
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 32px;
+  line-height: 48px;
+  margin-left: 95px; }
+
+.innovation__footer {
+  margin-left: 95px;
+  padding-top: 450px; }
+
+.innovation__blue {
+  position: absolute;
+  top: 324px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 150px; }
+
+.innovation__block {
+  width: 200px;
+  height: 240px;
+  background-color: #00adef;
+  margin-right: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding: 0 48px 40px 48px; }
+
+.innovation__blocktext {
+  color: #ffffff;
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 20px;
+  line-height: 32px; }
+
+.development {
+  width: 100%;
+  margin-top: 150px;
+  margin-bottom: 150px; }
+
+.development__main {
+  padding-top: 170px;
+  height: 642px;
+  background-color: #000;
+  position: relative;
+  width: 100%;
+  height: 100%; }
+  .development__main .decors__decor .decors__square {
+    width: 80px; }
+  .development__main .decors__decor .decors__rhombus {
+    display: none; }
+
+.development__black {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.development__text {
+  width: 720px;
+  color: #ffffff;
+  font-family: "Museo Sans Cyrl 100";
+  font-size: 32px;
+  line-height: 48px;
+  padding-left: 160px;
+  position: relative;
+  border-right: 2px solid  #00adef;
+  padding-top: 70px;
+  padding-bottom: 70px; }
+
+.development__text2 {
+  opacity: 0.2;
+  color: #ffffff;
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 20px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  text-transform: uppercase;
+  width: 320px;
+  padding-left: 80px;
+  padding-top: 70px; }
+
+.development__footer {
+  background-color: #fff;
+  position: relative; }
+
+.development__footermain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: -100px;
+  left: 0;
+  min-height: 100%;
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.development__column {
+  padding-right: 80px; }
+  .development__column:last-child {
+    padding-right: 0; }
+
+.development__link {
+  text-align: left; }
+  .development__link li span {
+    opacity: 0.5;
+    color: #000000;
+    font-family: "Museo Sans Cyrl 300";
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    padding-left: 30px; }
+
+.development__list1 {
+  background: url("..//img/icons/1.svg") left no-repeat;
+  opacity: 1; }
+
+.development__list2 {
+  background: url("..//img/icons/2.svg") left no-repeat;
+  opacity: 1; }
+
+.development__list3 {
+  background: url("..//img/icons/3.svg") left no-repeat;
+  opacity: 1; }
+
+.development__list4 {
+  background: url("..//img/icons/4.svg") left no-repeat;
+  opacity: 1; }
+
+.new {
+  margin-top: 250px;
+  width: 100%;
+  position: relative;
+  min-height: 1210px; }
+
+.new__content {
+  top: 50px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.decors__square {
+  background-color: #000;
+  width: 80px;
+  z-index: 2; }
+
+.new__col {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0; }
+
+.new__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%; }
+
+.new__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33.333%;
+  flex: 0 0 33.333%;
+  color: #000000;
+  font-family: "Museo Sans Cyrl 900";
+  font-size: 40px;
+  line-height: 56px;
+  margin: 0 auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .new__text img {
+    width: 100%; }
+
+.footer1 {
+  margin-top: 0px;
+  min-width: 100%;
+  min-height: 792px;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.footer1__title {
+  margin-bottom: 87px; }
+
+.footer1__column {
+  padding: 172px 0 0 70px; }
+  .footer1__column li {
+    margin-bottom: 10px;
+    list-style: none; }
+  .footer1__column:first-child {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto; }
+  .footer1__column:last-child {
+    padding: 172px 0 172px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: gray;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 328px;
+    margin: 0 auto; }
+    .footer1__column:last-child .footer1__img {
+      text-align: center; }
+
+.footer1__content {
+  color: #ffffff;
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 16px;
+  line-height: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 87px; }
+
+.footer__concolumn {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33.333%;
+  flex: 0 0 33.333%;
+  padding-right: 100px; }
+  .footer__concolumn:last-child {
+    padding-right: 0; }
+
+.concolumn__text {
+  margin-bottom: 50px; }
+
+.concolumn__email {
+  margin-bottom: 50px; }
+
+.footer__rights {
+  color: #ffffff;
+  font-family: "Museo Sans Cyrl 300";
+  font-size: 16px;
+  line-height: 28px; }
+
+.wrapper {
+  width: 100%;
+  max-height: 100%;
+  overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+._container {
+  max-width: 1170px;
+  margin: 0 auto; }
